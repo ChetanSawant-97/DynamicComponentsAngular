@@ -1,0 +1,26 @@
+<div style="display: flex; padding: 1em; flex-direction: column; width: 100%; position: relative; background-color: black;">
+    <div style="position: absolute; right: 0%; top: 0%; width: 12%;">
+        <img src="assets/icons/close.png" alt="" style="width: 100%; cursor: pointer; border-radius: 50%;"
+            (click)="emitCardEvent()">
+    </div>
+    <div style="width: 100%;">
+        <img style="width: 100%;" src={{data.thumbnail}} alt="">
+    </div>
+    <div style="width: 100%;">
+        <p class="videoTitle">
+            {{data.title}}
+        </p>
+    </div>
+    <div style="width: 100%;">
+        <p class="channelTitle">{{data.channelTitle}}</p>
+    </div>
+    <div style="width: 100%;" class="viewsAnfPublish">
+        <p style="width: 14%;">{{data.views}}M </p>
+        <div style="width: 4%;">
+            <img style="width: 58%;" src="assets/icons/dot.png" alt="" >
+        </div>
+        <p style="width: 40%;" class="publishedBefore">
+            {{data.publishedAt | publishTime}}
+        </p>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+.addButton{
+    background-color: darkcyan; 
+    color: white; 
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center; 
+    padding: 3px 12px; 
+    border: 1px solid goldenrod!important; 
+    font-size: 1em; 
+    border-radius: 6px; 
+    margin: 10px 0px 0px 10px; 
+    cursor: pointer; 
+}
+
+.addButton:active{
+    border: 1px solid grey;
+}
+
+.container{
+    display: flex;
+    padding: 1.5em;
+    flex-direction: column;
+    border: 0.5px solid #94948f;
+    margin: 0.5em;
+    border-radius: .5em;
+    background-color: black;
+}
+
+.container div{
+    width: 100%;
+}
+
+.container div:nth-child(1){
+    margin: auto;
+    display: flex;
+    
+}
+
+.container div button{
+    padding: 0.4em 0.8em;
+    border-radius: 0.6em;
+    background-color: #353535;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 0.4em;
+    cursor: pointer;
+}
+
+.cardsContainer{
+    display: grid;
+    padding: 1.5em 0px 0px 0px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 10px;
+}
